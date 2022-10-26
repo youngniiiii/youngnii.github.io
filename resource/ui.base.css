@@ -586,14 +586,6 @@ display: block;transition:all 0.3s linear
 
     .unit-fix.afterfix .unit-wrap {height:300vh}
     .afterfix .boxlist .unit.n1 {height:50vh;top:200vh;z-index:12;align-items:unset;flex-direction:unset;}
-    /* .afterfix .boxlist .unit.n1 {height:50vh;top:0;z-index:12;align-self:flex-start;} */
-    .unit-fix.afterfix  {flex-direction:column;align-items:flex-end;}
-    /* .afterfix .boxlist .unit.n2 {align-self:flex-start;} */
-    /* 
-    .unit-fix.afterfix .boxlist {display:flex;flex-direction:column;align-items:flex-end;}
-    .unit-fix.afterfix  {flex-direction:column;align-items:flex-end;}
-    .unit-fix.afterfix .unit-wrap {position:absolute;top:auto;bottom:0;height:500vh}
-*/
   
 
     .overview-item.n7 .overview-content,
