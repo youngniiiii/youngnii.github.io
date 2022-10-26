@@ -372,15 +372,19 @@
 						const itemTop = that.getBoundingClientRect().top + st;
 						const card = document.querySelector('.card-list');
 						const fixSecTop = document.querySelector('.overview-item.n4').offsetTop;
+						let gbn = fixSecTop 
 						let cardw = vh;
 						let ch = that.offsetHeight;
 						const ht = document.querySelector('html');
 
-						// if(ht.classList.contains('size-mobile') == true){
-						// 	ch = ch/2
-						// } 
-						
-						if (st > itemTop && st < (ch/5) * 4  + fixSecTop) {
+					
+		
+						if(ht.classList.contains('size-mobile') == true){
+							gbn = gbn - 915
+						}
+
+						console.log(st > itemTop && st < (ch/5) * 5  + gbn)
+						if (st > itemTop && st < (ch/5) * 5  + gbn) {
 							that.classList.add('fix');
 							that.classList.remove('afterfix');
 							card.style.transform = 'translateY('+ - (st - fixSecTop) +'px)';
@@ -406,7 +410,7 @@
 							}
 						} else {
 								that.classList.remove('fix');
-							if (st > (ch/5) * 4  + fixSecTop) {
+							if (st > (ch/5) * 5  + gbn) {
 								that.classList.add('afterfix');
 							} 
 							card.style.transform = 'translateY(0px)';
