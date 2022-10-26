@@ -577,7 +577,7 @@ display: block;transition:all 0.3s linear
     .overview-item.n4 {height:300vh;}
     
     .boxlist .unit.n1 {width:100%;height:50%;}
-    .boxlist .unit.n2 {width:100%;height:100%;position:relative;overflow:hidden;margin-top:50%;}
+    .boxlist .unit.n2 {width:100%;height:100%;position:relative;overflow:hidden;margin-top:50vh;}
     .boxlist .unit .fixed-area {width:100%;height:50vh;top:50vh;}
     .boxlist .unit .fixed-area .pagination {top:45vh;bottom:auto;}
     .card-list {width:100%;height:50%;}
