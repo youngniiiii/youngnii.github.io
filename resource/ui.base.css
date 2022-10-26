@@ -576,17 +576,18 @@ display: block;transition:all 0.3s linear
 
     .overview-item.n4 {height:300vh;}
     
-    .boxlist .unit.n1 {width:100%;height:50vh;position:relative;bottom:auto;}
+    .boxlist .unit.n1 {width:100%;height:50vh;position:relative;bottom:auto;will-change:position;transition-property:position;transition-timing-function:ease-in;}
     .boxlist .unit.n2 {width:100%;height:100%;position:relative;overflow:hidden;}
-    .boxlist .unit .fixed-area {width:100%;height:50vh;top:50vh;}
-    .boxlist .unit .fixed-area .pagination {top:45vh;bottom:auto;}
+    .boxlist .unit .fixed-area {width:100%;height:50vh;}
+    .boxlist .unit .fixed-area::before,
+    .boxlist .unit .fixed-area::after {height:10rem;}
     .card-list {width:100%;height:100vh;}
     .card-list-item {height:50vh}
 
 
     .unit-fix.afterfix .unit-wrap {height:300vh}
     .afterfix .boxlist .unit.n1 {height:50vh;top:200vh;z-index:12;align-items:unset;flex-direction:unset;}
-  
+    .afterfix .boxlist .unit .fixed-area {top:200vh;}
 
     .overview-item.n7 .overview-content,
     .overview-item.n8 .overview-content,

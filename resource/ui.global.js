@@ -372,19 +372,20 @@
 						const itemTop = that.getBoundingClientRect().top + st;
 						const card = document.querySelector('.card-list');
 						const fixSecTop = document.querySelector('.overview-item.n4').offsetTop;
-						let gbn = fixSecTop 
+						let gbn = fixSecTop;
+						let gnb2 = 4
+						let gbn3 = 5.5
 						let cardw = vh;
 						let ch = that.offsetHeight;
 						const ht = document.querySelector('html');
-
-					
 		
 						if(ht.classList.contains('size-mobile') == true){
 							gbn = gbn - 915
+							gnb2 = 5
+							gbn3 = 6.5
 						}
 
-						console.log(st > itemTop && st < (ch/5) * 5  + gbn)
-						if (st > itemTop && st < (ch/5) * 5  + gbn) {
+						if (st > itemTop && st < (ch/5) * gnb2  + gbn) {
 							that.classList.add('fix');
 							that.classList.remove('afterfix');
 							card.style.transform = 'translateY('+ - (st - fixSecTop) +'px)';
@@ -392,25 +393,25 @@
 							//card.style.transform = 'translateY('+ (-1 * window.scrollY) +'px)';
 							currentPage.innerText = 1
 
-							if (st - itemTop > (ch / 5.5) * 1) {
+							if (st - itemTop > (ch / gbn3) * 1) {
 								//card.style.transform = 'translateY('+ (cardw * -1) +'px)';
 								currentPage.innerText = 2
 							} 
-							if (st - itemTop > (ch / 5.5) * 2) {
+							if (st - itemTop > (ch / gbn3) * 2) {
 								//card.style.transform = 'translateY('+ (cardw * -2) +'px)';
 								currentPage.innerText = 3
 							}
-							if (st - itemTop > (ch / 5.5) * 3) {
+							if (st - itemTop > (ch / gbn3) * 3) {
 								//card.style.transform = 'translateY('+ (cardw * -3) +'px)';
 								currentPage.innerText = 4
 							}
-							if (st - itemTop > (ch / 5.5) * 4) {
+							if (st - itemTop > (ch / gbn3) * 4) {
 								//card.style.transform = 'translateY('+ (cardw * -4) +'px)';
 								currentPage.innerText = 5
 							}
 						} else {
 								that.classList.remove('fix');
-							if (st > (ch/5) * 5  + gbn) {
+							if (st > (ch/5) * gnb2  + gbn) {
 								that.classList.add('afterfix');
 							} 
 							card.style.transform = 'translateY(0px)';
