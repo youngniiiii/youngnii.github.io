@@ -321,7 +321,7 @@ display: block;transition:all 0.3s linear
 .overview-item.n5 .overview-have-item + .overview-have-item {margin-top:7rem;}
 .overview-item.n5 .overview-have-item .overview-have-content {width:60rem;}
 
-.overview-have-item .overview-have-img {padding-right:9.4rem;text-align:right;height:3.6rem;}
+.overview-have-item .overview-have-img {padding-right:9.4rem;text-align:right;height:36rem;}
 .overview-have-item .overview-have-img img{width:36rem;}
 .overview-have-item .overview-have-tit {font-size:3.2rem;line-height:4.4rem;color:#222;font-weight:700;}
 .overview-have-item .overview-have-desc {font-size:2rem;line-height:3.2rem;margin-top:2rem}
