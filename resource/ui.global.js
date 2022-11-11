@@ -507,7 +507,6 @@ function touchLang(e){
 		e.target.classList.toggle('open');
 	})
 }
-console.log(document.querySelector('.overview-item.n8').offsetHeight);
 
 window.addEventListener("scroll", navHighlighter);
 
